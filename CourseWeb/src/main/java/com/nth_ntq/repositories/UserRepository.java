@@ -9,19 +9,8 @@ import java.util.List;
 
 /**
  *
- * @author pc
+ * @author trung
  */
-public interface TeacherRepository {
-
-    List<Users> getTeachers();
-
-    Users getTeacherById(Long id);
-
-    void addOrUpdateTeacher(Users u);
-
-    void deleteTeacher(Long id);
-
-    List<Users> getUsersByRole(String role);
-
-    List<Users> getTeachersByKeyword(String kw);
+public interface UserRepository {
+   List<Users> getUsersByKeyword(String kw);
 }
